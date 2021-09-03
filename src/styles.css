@@ -1,0 +1,14 @@
+@font-face {
+  font-family: MessinaSans;
+  src: url("fonts/MessinaSans-Book.otf") format("opentype");
+}
+
+body {
+  background-color: #1f1f1f;
+}
+
+a {
+  font-family: MessinaSans;
+  text-decoration: none;
+  color: #1f1f1f;
+}
