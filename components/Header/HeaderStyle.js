@@ -28,4 +28,9 @@ export const headerStyle = makeStyles((theme) => ({
 		top: '180px',
 		left: '30px',
 	},
+	smallLogo: {
+		fontSize: '30px',
+		mixBlendMode: 'difference',
+		color: 'white',
+	},
 }));

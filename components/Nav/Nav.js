@@ -207,7 +207,7 @@ export default function Nav() {
 								key={node.name}
 								className={css.navLinks}
 							>
-								<Link href='/'>
+								<Link href='/about'>
 									<a onClick={closeMenu}>
 										<Typography variant='h2'>{node.name}</Typography>
 									</a>

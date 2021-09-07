@@ -13,11 +13,13 @@ export default function Index() {
 		<Container className={css.homeBody} maxWidth='sm'>
 			<Box my={4}>
 				<Typography variant='h4' component='h1' gutterBottom>
-					Next.js Prototype
+					Index Page
 				</Typography>
-				<Link href='/about' color='secondary'>
-					Go to the about page
-				</Link>
+				<div>
+					<Link style={{ color: '#fff' }} href='/about'>
+						Go to the about page
+					</Link>
+				</div>
 			</Box>
 		</Container>
 	);
