@@ -4,7 +4,7 @@ export const navStyle = makeStyles((theme) => ({
 	nav: {
 		position: 'fixed',
 		top: '0',
-		// right: '-720px',
+		right: '-320px',
 		zIndex: '99',
 		width: '320px',
 		height: '100vh',
@@ -12,12 +12,13 @@ export const navStyle = makeStyles((theme) => ({
 		background: 'white',
 		display: 'flex',
 		alignItems: 'center',
-		[theme.breakpoints.up('md')]: {
+		[theme.breakpoints.up('sm')]: {
 			width: '720px',
+			right: '-720px',
 		},
 	},
 	navBg: {
-		position: 'absolute',
+		position: 'fixed',
 		left: '0',
 		top: '0',
 		width: '100vw',

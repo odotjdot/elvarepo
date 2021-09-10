@@ -25,8 +25,9 @@ export default function Nav() {
 	const [isMenuOpen, setIsMenuOpen] = useState('CLOSED');
 	const css = navStyle();
 	const theme = useTheme();
-	const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
-	console.log(isMobile);
+	// const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+	const isMobile = useMediaQuery('(max-width:600px)');
+	// console.log(isMobile);
 	const menuAnimation = {
 		open: {
 			right: '0px',
