@@ -3,10 +3,7 @@ import Link from 'next/link';
 
 import { motion, useAnimation } from 'framer-motion';
 import Grid from '@material-ui/core/Grid';
-import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
-import ClickAwayListener from '@material-ui/core/ClickAwayListener';
-import AppBar from '@material-ui/core/AppBar';
 import { useTheme } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
@@ -24,10 +21,9 @@ const menuItems = [
 export default function Nav() {
 	const [isMenuOpen, setIsMenuOpen] = useState('CLOSED');
 	const css = navStyle();
-	const theme = useTheme();
-	// const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
+
 	const isMobile = useMediaQuery('(max-width:600px)');
-	// console.log(isMobile);
+
 	const menuAnimation = {
 		open: {
 			right: '0px',

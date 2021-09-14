@@ -5,7 +5,7 @@ export const navStyle = makeStyles((theme) => ({
 		position: 'fixed',
 		top: '0',
 		right: '-320px',
-		zIndex: '99',
+		zIndex: '99999999',
 		width: '320px',
 		height: '100vh',
 		paddingLeft: theme.spacing(2),
@@ -23,7 +23,7 @@ export const navStyle = makeStyles((theme) => ({
 		top: '0',
 		width: '100vw',
 		height: '100vh',
-		zIndex: '98',
+		zIndex: '99999999',
 		backgroundColor: 'rgba(0,0,0,.8)',
 	},
 	menu: {
@@ -56,13 +56,13 @@ export const navStyle = makeStyles((theme) => ({
 	},
 	navContainer: {
 		position: 'relative',
-		// zIndex: '999',
+		zIndex: '999',
 	},
 	navButton: {
 		position: 'fixed',
 		top: '30px',
 		right: '30px',
-		zIndex: '9999',
+		zIndex: '9999999999',
 		mixBlendMode: 'difference',
 		'& :hover': {
 			cursor: 'pointer',

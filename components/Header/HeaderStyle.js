@@ -5,9 +5,7 @@ export const headerStyle = makeStyles((theme) => ({
 		height: '250px',
 	},
 	siteTitle: {
-		// width: '50%',
-		mixBlendMode: 'difference',
-		color: 'white',
+		// mixBlendMode: 'difference',
 	},
 	titleContainer: {
 		overflow: 'hidden',
@@ -15,6 +13,8 @@ export const headerStyle = makeStyles((theme) => ({
 		position: 'fixed',
 		top: '30px',
 		left: '30px',
+		zIndex: '99999',
+		mixBlendMode: 'difference',
 	},
 	subTitle: {
 		fontSize: '40px',
