@@ -1,25 +1,25 @@
 import { makeStyles } from '@material-ui/core/styles';
 
-import { motion, useAnimation } from 'framer-motion';
-import Grid from '@material-ui/core/Grid';
-import Typography from '@material-ui/core/Typography';
-
-import { useTheme } from '@material-ui/core/styles';
-import useMediaQuery from '@material-ui/core/useMediaQuery';
-
 export const homeWorkStyle = makeStyles((theme) => ({
 	workContainer: {
 		minHeight: '100vh',
+		position: 'relative',
 	},
 	backgroundContainer: {
 		minHeight: '100vh',
-		transform: 'scale(95%)',
+		width: '100%',
+		transform: 'scale(96%)',
+		position: 'absolute',
+		top: '0',
+		left: '0',
 	},
 	workList: {
-		paddingTop: '10vh',
+		paddingTop: '100vh',
 		paddingBottom: '10vh',
 		paddingLeft: theme.spacing(3),
 		paddingRight: theme.spacing(3),
+		position: 'relative',
+		zIndex: '2',
 	},
 	workListItems: {
 		width: '100%',

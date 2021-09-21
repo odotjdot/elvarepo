@@ -87,10 +87,6 @@ export default function Nav() {
 				type: 'tween',
 				duration: 0.3,
 				ease: [0.17, 0.67, 0.83, 0.67],
-				// damping: 50,
-				// mass: 2,
-				// stiffness: 500,
-				// delay: j * 0.9,
 			},
 		}),
 		close: {

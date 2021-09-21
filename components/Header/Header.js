@@ -23,8 +23,6 @@ export default function Header() {
 	const isMobile = useMediaQuery(theme.breakpoints.up('sm'));
 	const router = useRouter();
 
-	console.log(router.pathname);
-
 	const { scrollY } = useViewportScroll();
 
 	const titleRef = useRef();
@@ -68,7 +66,7 @@ export default function Header() {
 
 	const height = useTransform(scrollY, [138, 0], [30, 138], [0.42, 0, 0.58, 1]);
 	const opacity = useTransform(scrollY, [0, 25], [1, 0], [0.42, 0, 0.58, 1]);
-
+	// console.log(height);
 	return (
 		<Grid container className={css.header}>
 			<Grid item>

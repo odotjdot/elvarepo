@@ -3,7 +3,7 @@
   "version": "4.0.0",
   "private": true,
   "dependencies": {
-    "@builder.io/react": "1.1.35-0",
+    "@builder.io/react": "^1.1.35-0",
     "@builder.io/sdk": "1.1.22-2",
     "@builder.io/widgets": "1.2.19",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
@@ -24,6 +24,9 @@
     "prop-types": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "react-hook-inview": "^4.3.11",
+    "react-slick": "^0.28.1",
+    "slick-carousel": "^1.8.1",
     "uuid": "^8.3.2"
   },
   "devDependencies": {

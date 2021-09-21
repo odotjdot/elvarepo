@@ -6,13 +6,29 @@ import Link from '../src/Link';
 
 import { homeStyle } from '../components/Home/HomeStyle';
 import Home from '../components/Home/Home';
+import { builder } from '@builder.io/react';
 
-export default function Index() {
+// import '../components/Heading/Heading.builder';
+
+builder.init('05a424031a374004925af5910eeeb3f4');
+
+export const getStaticProps = async (context) => {
+	const content = await builder
+		.get('home-section', { url: context.resolvedUrl })
+		.promise();
+	return {
+		props: { content },
+		revalidate: true,
+		notFound: !content,
+	};
+};
+
+export default function Index(props) {
 	const css = homeStyle();
-
+	console.log('index props ', props);
 	return (
 		<>
-			<Home />
+			<Home props={props} />
 		</>
 	);
 }

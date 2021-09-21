@@ -1,6 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Head from 'next/head';
+import { builder, Builder } from '@builder.io/react';
+// import builderConfig from '@config/builder';
+
 import { ThemeProvider } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Layout from '../src/Layout';
@@ -10,6 +13,8 @@ import '../src/styles.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 config.autoAddCss = false;
+
+builder.init('05a424031a374004925af5910eeeb3f4');
 
 export default function MyApp(props) {
 	const { Component, pageProps } = props;
