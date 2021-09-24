@@ -1,14 +1,15 @@
 import React from 'react';
+import { builder } from '@builder.io/react';
 import Container from '@material-ui/core/Container';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Link from '../src/Link';
 
-import { homeStyle } from '../components/Home/HomeStyle';
 import Home from '../components/Home/Home';
-import { builder } from '@builder.io/react';
+import { homeStyle } from '../components/Home/HomeStyle';
 
-// import '../components/Heading/Heading.builder';
+import '../src/builder-settings';
+import { HomeSectionContext } from '../src/contexts/HomeSectionContext';
 
 builder.init('05a424031a374004925af5910eeeb3f4');
 
@@ -25,10 +26,11 @@ export const getStaticProps = async (context) => {
 
 export default function Index(props) {
 	const css = homeStyle();
-	console.log('index props ', props);
 	return (
 		<>
-			<Home props={props} />
+			<HomeSectionContext.Provider value={props}>
+				<Home />
+			</HomeSectionContext.Provider>
 		</>
 	);
 }

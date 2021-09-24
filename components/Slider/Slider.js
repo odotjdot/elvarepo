@@ -51,7 +51,9 @@ const data = [
 			'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
 	},
 ];
-export default function SliderContainer() {
+export default function SliderNarrow(props) {
+	const { items } = props;
+	console.log('slider props ', items);
 	const css = sliderStyle();
 	const settings = {
 		dots: true,
@@ -69,11 +71,15 @@ export default function SliderContainer() {
 	return (
 		<div>
 			<Slider {...settings}>
-				{data.map(({ name, text }) => {
+				{items.map(({ image, text }) => {
 					return (
-						<div key={name} className={css.itemContainer}>
-							<div className={css.itemHeader}>{name}</div>
-							<div className={css.itemText}>{text}</div>
+						<div key={image} className={css.itemContainer}>
+							<div className={css.itemHeader}>
+								<img src={image} />
+							</div>
+							<div className={css.itemText}>
+								<div dangerouslySetInnerHTML={{ __html: text }} />
+							</div>
 						</div>
 					);
 				})}

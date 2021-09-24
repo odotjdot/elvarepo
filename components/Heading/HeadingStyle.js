@@ -2,12 +2,9 @@ import { makeStyles } from '@material-ui/core/styles';
 import { useTheme } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
 
-export const HomeSectionStyle = makeStyles((theme) => ({
-	homeSectionContainer: {
+export const headingStyle = makeStyles((theme) => ({
+	headingContainer: {
 		background: 'white',
-		padding: theme.spacing(10, 0),
-		'& .builder-block': {
-			marginTop: 0,
-		},
+		padding: theme.spacing(0, 3),
 	},
 }));

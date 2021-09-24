@@ -15,7 +15,13 @@ export const sliderStyle = makeStyles((theme) => ({
 		padding: theme.spacing(2, 0),
 		'& .slick-slide': {
 			width: '260px',
-			marginRight: theme.spacing(10),
+			margin: theme.spacing(0, 4),
+			'& img': {
+				width: '100%',
+			},
+		},
+		'& .slick-list': {
+			paddingLeft: theme.spacing(4),
 		},
 	},
 	itemHeader: {

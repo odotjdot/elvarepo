@@ -1,8 +1,8 @@
 import { Builder } from '@builder.io/react';
-import { Heading } from './Heading';
+import Heading from './Heading';
 
 Builder.registerComponent(Heading, {
-	name: 'Heading',
+	name: 'Elva Heading',
 
 	inputs: [
 		{
