@@ -14,7 +14,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import { sliderStyle } from './SliderStyle';
 
-export default function SliderNarrow(props) {
+export default function SliderVideo(props) {
 	const { items } = props;
 	const css = sliderStyle();
 	const settings = {
@@ -35,12 +35,7 @@ export default function SliderNarrow(props) {
 				{items?.map(({ image, text }) => {
 					return (
 						<div key={image} className={css.itemContainer}>
-							<div className={css.itemHeader}>
-								<img src={image} />
-							</div>
-							<div className={css.itemText}>
-								<div dangerouslySetInnerHTML={{ __html: text }} />
-							</div>
+							<img src={image} />
 						</div>
 					);
 				})}

@@ -14,9 +14,10 @@ export default function Paragraph({ text }) {
 		<Grid container className={css.paragraphContainer}>
 			<Grid item sm={10}>
 				<motion.div>
-					<Typography>
-						<p dangerouslySetInnerHTML={{ __html: text }} />
-					</Typography>
+					<Typography
+						component='div'
+						dangerouslySetInnerHTML={{ __html: text }}
+					/>
 				</motion.div>
 			</Grid>
 		</Grid>
