@@ -4,6 +4,7 @@ import '../components/Heading/Heading.builder';
 import '../components/Paragraph/Paragraph.builder';
 import '../components/Spacer/Spacer.builder';
 import '../components/Slider/Slider.builder';
+import '../components/Slider/SliderTeam.builder';
 
 builder.init('05a424031a374004925af5910eeeb3f4');
 
@@ -14,5 +15,6 @@ Builder.register('insertMenu', {
 		{ name: 'Elva Paragraph' },
 		{ name: 'Elva Spacer' },
 		{ name: 'Elva Narrow Slider' },
+		{ name: 'Elva Team Slider' },
 	],
 });

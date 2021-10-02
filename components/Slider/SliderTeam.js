@@ -14,7 +14,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import { sliderStyle } from './SliderStyle';
 
-export default function SliderVideo(props) {
+export default function SliderTeam(props) {
 	const { items } = props;
 	const css = sliderStyle();
 	const settings = {
@@ -32,10 +32,15 @@ export default function SliderVideo(props) {
 	return (
 		<div>
 			<Slider {...settings}>
-				{items?.map(({ image, text }) => {
+				{items?.map(({ image, name, position }) => {
 					return (
-						<div key={image} className={css.itemContainer}>
-							<img src={image} />
+						<div key={name} className={css.itemContainer}>
+							<div>
+								<img src={image} />
+							</div>
+							<div>
+								{name} - {position}
+							</div>
 						</div>
 					);
 				})}
