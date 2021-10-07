@@ -4,7 +4,8 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 
 export const headingStyle = makeStyles((theme) => ({
 	headingContainer: {
-		background: 'white',
+		// mixBlendMode: 'difference',
+		// color: 'white',
 		padding: theme.spacing(0, 3),
 	},
 }));

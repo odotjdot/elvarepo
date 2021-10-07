@@ -24,5 +24,20 @@ Builder.registerComponent(SliderTeam, {
 				},
 			],
 		},
+		{
+			type: 'string',
+			name: 'color',
+			enum: [
+				{
+					label: 'Black',
+					value: '#000',
+				},
+				{
+					label: 'White',
+					value: '#fff',
+				},
+			],
+			defaultValue: '#000',
+		},
 	],
 });

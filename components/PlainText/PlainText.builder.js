@@ -1,43 +1,37 @@
 import { Builder } from '@builder.io/react';
-import Heading from './Heading';
+import PlainText from './PlainText';
 
-Builder.registerComponent(Heading, {
-	name: 'Elva Heading',
+Builder.registerComponent(PlainText, {
+	name: 'Elva Plain Text',
 
 	inputs: [
 		{
-			type: 'string',
+			type: 'richText',
 			name: 'text',
 			required: true,
-			defaultValue: 'Hello there!',
+			defaultValue: 'Content Goes Here!',
 		},
 		{
 			type: 'string',
 			name: 'type',
-			required: true,
 			enum: [
 				{
-					lable: 'Heading 1',
-					value: 'h1',
+					label: 'Body 1',
+					value: 'body1',
 				},
 				{
-					lable: 'Heading 2',
-					value: 'h2',
+					label: 'Body 2',
+					value: 'body2',
 				},
 				{
-					lable: 'Heading 3',
-					value: 'h3',
+					label: 'Subtitle 1',
+					value: 'subtitle1',
 				},
 				{
-					lable: 'Heading 4',
-					value: 'h4',
-				},
-				{
-					lable: 'Heading 5',
-					value: 'h5',
+					label: 'Subtitle 2',
+					value: 'subtitle2',
 				},
 			],
-			defaultValue: 'h1',
 		},
 		{
 			type: 'string',

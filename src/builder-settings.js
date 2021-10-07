@@ -2,6 +2,7 @@ import { Builder, builder } from '@builder.io/react';
 
 import '../components/Heading/Heading.builder';
 import '../components/Paragraph/Paragraph.builder';
+import '../components/PlainText/PlainText.builder';
 import '../components/Spacer/Spacer.builder';
 import '../components/Slider/Slider.builder';
 import '../components/Slider/SliderTeam.builder';
@@ -13,6 +14,7 @@ Builder.register('insertMenu', {
 	items: [
 		{ name: 'Elva Heading' },
 		{ name: 'Elva Paragraph' },
+		{ name: 'Elva Plain Text' },
 		{ name: 'Elva Spacer' },
 		{ name: 'Elva Narrow Slider' },
 		{ name: 'Elva Team Slider' },

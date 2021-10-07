@@ -14,12 +14,11 @@ const theme = createTheme({
 			main: red.A400,
 		},
 		background: {
-			default: '#1E1E1E',
+			default: '#FFFFFF',
 		},
 	},
 	typography: {
 		fontFamily: 'MessinaSans',
-		// fontSize: '20px',
 		fontWeightRegular: 600,
 		body1: {
 			fontSize: '20px',
@@ -52,8 +51,16 @@ const theme = createTheme({
 		h4: {
 			fontFamily: 'MessinaSans',
 		},
+		h5: {
+			fontFamily: 'MessinaSans',
+			fontSize: '24px',
+			fontWeight: '600',
+			'@media (min-width:600px)': {
+				fontSize: '20px',
+			},
+		},
 		subtitle1: {
-			fontSize: '18px',
+			fontSize: '24px',
 			fontWeight: '600',
 		},
 		subtitle2: {

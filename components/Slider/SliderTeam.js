@@ -12,11 +12,11 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import { sliderStyle } from './SliderStyle';
+import { sliderTeamStyle } from './SliderTeamStyle';
 
 export default function SliderTeam(props) {
-	const { items } = props;
-	const css = sliderStyle();
+	const { items, color } = props;
+	const css = sliderTeamStyle();
 	const settings = {
 		dots: true,
 		infinite: true,
@@ -35,10 +35,10 @@ export default function SliderTeam(props) {
 				{items?.map(({ image, name, position }) => {
 					return (
 						<div key={name} className={css.itemContainer}>
-							<div>
+							<div className={css.itemImageContainer}>
 								<img src={image} />
 							</div>
-							<div>
+							<div className={css.itemName} style={{ color: color }}>
 								{name} - {position}
 							</div>
 						</div>
