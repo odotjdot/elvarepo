@@ -14,6 +14,7 @@ const theme = createTheme({
 			main: red.A400,
 		},
 		background: {
+			// default: '#1E1E1E',
 			default: '#FFFFFF',
 		},
 	},
@@ -28,6 +29,9 @@ const theme = createTheme({
 			fontSize: '60px',
 			fontWeight: '600',
 			'@media (min-width:600px)': {
+				fontSize: '80px',
+			},
+			'@media (min-width:960px)': {
 				fontSize: '148px',
 			},
 		},
@@ -37,6 +41,9 @@ const theme = createTheme({
 			fontSize: '40px',
 			fontWeight: '600',
 			'@media (min-width:600px)': {
+				fontSize: '72px',
+			},
+			'@media (min-width:960px)': {
 				fontSize: '108px',
 			},
 		},
